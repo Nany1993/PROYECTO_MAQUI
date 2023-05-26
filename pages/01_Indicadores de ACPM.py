@@ -6,7 +6,7 @@ import seaborn as sns
 import locale
 
 
-df_acpm_consolidado = pd.read_csv("Archivos_Consolidados\df_acpm.csv", sep=",")
+df_acpm_consolidado = pd.read_csv(r"Archivos_Consolidados\df_acpm.csv", sep=",")
 df_acpm_consolidado["Mes"] = pd.to_datetime(df_acpm_consolidado['Fecha']).dt.month
 df_acpm_consolidado['Año'] = pd.to_datetime(df_acpm_consolidado['Fecha']).dt.year
 
